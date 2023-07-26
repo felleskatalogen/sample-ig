@@ -134,6 +134,12 @@
       <name value="Simple library example"/>
       <description value="A simple example showing how library is pre-loaded"/>
     </resource> -->
+    <resource>
+      <reference>
+        <reference value="Bundle/example-bundle-with-images"/>
+      </reference>
+      <name value="Example Bundle with images"/>
+    </resource>
     <page>
       <!-- The root will always be toc.html - the template will force it if you don't do it -->
       <nameUrl value="toc.html"/>
