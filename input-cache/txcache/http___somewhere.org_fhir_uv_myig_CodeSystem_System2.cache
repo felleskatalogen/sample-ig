@@ -1,0 +1,27 @@
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "inactive" : false,
+    "include" : [{
+      "system" : "http://somewhere.org/fhir/uv/myig/CodeSystem/System2",
+      "concept" : [{
+        "code" : "code1",
+        "display" : "Code 1"
+      },
+      {
+        "code" : "code2",
+        "display" : "Code 2"
+      },
+      {
+        "code" : "code3",
+        "display" : "Code 3"
+      }]
+    }]
+  }
+}}####
+e: {
+  "from-server" : true,
+  "error" : "Error from http://tx.fhir.org/r4: Unable to provide support for code system http://somewhere.org/fhir/uv/myig/CodeSystem/System2"
+}
+-------------------------------------------------------------------------------------

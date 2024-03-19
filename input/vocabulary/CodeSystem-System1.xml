@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+    <id value="System1"/>
+    <url value="http://somewhere.org/fhir/uv/myig/CodeSystem/System1"/>
+    <name value="System1"/>
+    <title value="System1"/>
+    <status value="active"/>
+    <experimental value="false"/>
+    <description value="System 1"/>
+    <content value="example"/>
+    <caseSensitive value="true"/>
+    <concept>
+        <code value="code0"/>
+        <display value="Code 0"/>
+    </concept>
+</CodeSystem>

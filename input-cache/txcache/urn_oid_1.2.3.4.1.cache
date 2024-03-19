@@ -1,0 +1,19 @@
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "inactive" : false,
+    "include" : [{
+      "system" : "urn:oid:1.2.3.4.1",
+      "concept" : [{
+        "code" : "code0",
+        "display" : "Code 0"
+      }]
+    }]
+  }
+}}####
+e: {
+  "from-server" : true,
+  "error" : "Error from http://tx.fhir.org/r4: Unable to provide support for code system urn:oid:1.2.3.4.1"
+}
+-------------------------------------------------------------------------------------

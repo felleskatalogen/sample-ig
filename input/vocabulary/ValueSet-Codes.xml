@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+    <id value="Codes"/>
+    <url value="http://somewhere.org/fhir/uv/myig/ValueSet/Codes"/>
+    <name value="Codes"/>
+    <title value="Codes"/>
+    <status value="active"/>
+    <experimental value="false"/>
+    <description value="Codes"/>
+    <compose>
+        <include>
+            <system value="http://somewhere.org/fhir/uv/myig/CodeSystem/System1"/>
+            <concept>
+                <code value="code0"/>
+                <display value="Code 0"/>
+            </concept>
+        </include>
+        <include>
+            <system value="http://somewhere.org/fhir/uv/myig/CodeSystem/System2"/>
+            <concept>
+                <code value="code1"/>
+                <display value="Code 1"/>
+            </concept>
+            <concept>
+                <code value="code2"/>
+                <display value="Code 2"/>
+            </concept>
+            <concept>
+                <code value="code3"/>
+                <display value="Code 3"/>
+            </concept>
+        </include>
+    </compose>
+    <expansion>
+        <timestamp value="2024-03-18"/>
+        <contains>
+            <system value="http://somewhere.org/fhir/uv/myig/CodeSystem/System1"/>
+            <code value="code0"/>
+            <display value="Code 0"/>
+        </contains>
+        <contains>
+            <system value="http://somewhere.org/fhir/uv/myig/CodeSystem/System2"/>
+            <code value="code1"/>
+            <display value="Code 1"/>
+        </contains>
+        <contains>
+            <system value="http://somewhere.org/fhir/uv/myig/CodeSystem/System2"/>
+            <code value="code2"/>
+            <display value="Code 2"/>
+        </contains>
+        <contains>
+            <system value="http://somewhere.org/fhir/uv/myig/CodeSystem/System2"/>
+            <code value="code3"/>
+            <display value="Code 3"/>
+        </contains>
+    </expansion>
+</ValueSet>
