@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bundle xmlns="http://hl7.org/fhir">
+    <id value="Bundle-Document-DocRef" />
+    <identifier>
+        <system value="http://example.org/fhir/uv/myig" />
+        <value value="12345" />
+    </identifier>
+    <type value="document" />
+    <timestamp value="2024-05-29T13:15:00-05:00" />
+    <entry>
+        <fullUrl value="http://somewhere.org/fhir/uv/myig/Composition/Comp" />
+        <resource>
+            <Composition>
+                <id value="Comp" />
+                <identifier>
+                    <system value="http://example.org/fhir/uv/myig" />
+                    <value value="12345" />
+                </identifier>
+                <status value="final" />
+                <type>
+                    <coding>
+                        <system value="http://loinc.org" />
+                        <code value="11506-3" />
+                        <display value="Progress note" />
+                    </coding>
+                </type>
+                <date value="2024-05-29" />
+                <author>
+                    <display value="Dr. Jane Doe" />
+                </author>
+                <title value="Consult Note" />
+                <section>
+                    <text>
+                        <status value="generated" />
+                        <div xmlns="http://www.w3.org/1999/xhtml">
+                            <p>Document with DocumentReference example</p>
+                        </div>
+                    </text>
+                    <entry>
+                        <reference value="DocumentReference/DocRef" />
+                    </entry>
+                </section>
+            </Composition>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="http://somewhere.org/fhir/uv/myig/DocumentReference/DocRef" />
+        <resource>
+            <DocumentReference>
+                <id value="DocRef" />
+                <status value="current" />
+                <content>
+                    <attachment>
+                        <contentType value="text/plain" />
+                        <language value="en" />
+                        <url value="http://example.com/nowhere.txt" />
+                        <size value="190" />
+                        <hash value="OGEzOGYyNjMzMDA2ZmQ1MzUxNDljNDRhM2E3M2YzMTI0MzdiMzQ3OA==" />
+                        <title value="DocumentReference for Comprehensive fully filled metadata" />
+                        <creation value="2020-12-31T23:50:50-05:00" />
+                    </attachment>
+                </content>
+            </DocumentReference>
+        </resource>
+    </entry>
+</Bundle>
